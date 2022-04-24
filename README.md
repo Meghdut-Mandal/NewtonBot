@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="images/NewtonBot_Logo.svg" height="400px"/>
+  <img src="images/NewtonBot_Logo.svg" height="250px"/>
 </p>
 
-
-# 💠[NewtonBot](https://github.com/Meghdut-Mandal/NewtonBot)💠
-> Your Automated Personal Assistant, on WhatsApp!
+> > Your Automated Personal Assistant, on WhatsApp!
 ---
 ![GitHub top language](https://img.shields.io/github/languages/top/Meghdut-Mandal/NewtonBot) [![GitHub release](https://img.shields.io/github/release/Meghdut-Mandal/NewtonBot.svg)](https://github.com/bkimminich/juice-shop/releases/latest)
  ![GitHub contributors](https://img.shields.io/github/contributors/Meghdut-Mandal/NewtonBot) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/NewtonBotOfficial/NewtonBot) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/NewtonBotOfficial/NewtonBot) ![GitHub Repo stars](https://img.shields.io/github/stars/NewtonBotOfficial/NewtonBot?style=social) ![GitHub repo size](https://img.shields.io/github/repo-size/NewtonBotOfficial/NewtonBot)
