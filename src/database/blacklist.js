@@ -20,7 +20,7 @@ const Blacklist = sequelize.define(
 );
 
 async function addBlacklistUser(jid = "", GrpId = "") {
-    Blacklist.findOrCreate({
+    await Blacklist.findOrCreate({
         where: {
             JID: jid,
             GRPID: GrpId,
@@ -29,7 +29,7 @@ async function addBlacklistUser(jid = "", GrpId = "") {
 }
 
 async function getBlacklistUser(jid = "", GrpId = "") {
-    var Msg = await Blacklist.findAll({
+    let Msg = await Blacklist.findAll({
         where: {
             JID: "",
             GRPID: GrpId,
@@ -37,7 +37,7 @@ async function getBlacklistUser(jid = "", GrpId = "") {
     });
 
     if (Msg.length < 1) {
-        var Msg = await Blacklist.findAll({
+        Msg = await Blacklist.findAll({
             where: {
                 JID: jid,
                 GRPID: "",
@@ -45,7 +45,7 @@ async function getBlacklistUser(jid = "", GrpId = "") {
         });
 
         if (Msg.length < 1) {
-            var Msg = await Blacklist.findAll({
+            Msg = await Blacklist.findAll({
                 where: {
                     JID: jid,
                     GRPID: GrpId,
@@ -66,7 +66,7 @@ async function getBlacklistUser(jid = "", GrpId = "") {
 }
 
 async function removeBlacklistUser(jid = "", GrpId = "") {
-    var Msg = await Blacklist.findAll({
+    const Msg = await Blacklist.findAll({
         where: {
             JID: jid,
             GRPID: GrpId,
