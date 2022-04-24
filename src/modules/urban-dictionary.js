@@ -13,8 +13,9 @@ module.exports = {
     async handle(client, chat, BotsApp, args) {
         const processing = await client.sendMessage(
             BotsApp.chatId,
-            STRINGS.ud.PROCESSING,
-            MessageType.text
+            {
+                text :  STRINGS.ud.PROCESSING
+            }
         ).catch(err => inputSanitization.handleError(err, client, BotsApp));
         try {
             var text = "";
@@ -23,8 +24,9 @@ module.exports = {
             } else if (args.length == 0) {
                 client.sendMessage(
                     BotsApp.chatId,
-                    STRINGS.ud.NO_ARG,
-                    MessageType.text
+                    {
+                        text: STRINGS.ud.NO_ARG
+                    }
                 ).catch(err => inputSanitization.handleError(err, client, BotsApp));
                 return;
             } else {
@@ -56,13 +58,17 @@ module.exports = {
                 "  👎" +
                 result.thumbs_down;
 
-            await client.deleteMessage(BotsApp.chatId, {
-                id: processing.key.id,
-                remoteJid: BotsApp.chatId,
-                fromMe: true,
-            });
+            // delte the processing message
+            // await client.deleteMessage(BotsA pp.chatId, {
+            //     id: processing.key.id,
+            //     remoteJid: BotsApp.chatId,
+            //     fromMe: true,
+            // });
 
-            await client.sendMessage(BotsApp.chatId, msg, MessageType.text).catch(err => inputSanitization.handleError(err, client, BotsApp));
+            await client.sendMessage(BotsApp.chatId,
+                {
+                    text: msg
+                }).catch(err => inputSanitization.handleError(err, client, BotsApp));
         } catch (err) {
             await inputSanitization.handleError(
                 err,

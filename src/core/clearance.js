@@ -1,5 +1,5 @@
 const chalk = require('chalk');
-const config = require('src/core/config')
+const config = require('./config')
 const adminCommands = require("../sidekick/input-sanitization").adminCommands;
 const sudoCommands = require("../sidekick/input-sanitization").sudoCommands;
 const STRINGS = require("../lib/db");
@@ -24,8 +24,9 @@ const clearance = async(BotsApp, client, isBlacklist) => {
                 );
                 await client.sendMessage(
                     BotsApp.chatId,
-                    GENERAL.ADMIN_PERMISSION,
-                    MessageType.text
+                    {
+                        text :  GENERAL.ADMIN_PERMISSION
+                    }
                 );
                 return false;
             } else if (sudoCommands.indexOf(BotsApp.commandName) >= 0 && !BotsApp.isSenderSUDO) {
@@ -44,8 +45,9 @@ const clearance = async(BotsApp, client, isBlacklist) => {
                 else{
                     await client.sendMessage(
                         BotsApp.chatId,
-                        GENERAL.SUDO_PERMISSION.format({ worktype: "public", groupName: BotsApp.groupName ? BotsApp.groupName : "private chat", commandName: BotsApp.commandName }),
-                        MessageType.text,
+                        {
+                            text :  GENERAL.SUDO_PERMISSION.format({ worktype: "public", groupName: BotsApp.groupName ? BotsApp.groupName : "private chat", commandName: BotsApp.commandName })
+                        },
                         {
                             contextInfo: {
                                 stanzaId: BotsApp.chatId,

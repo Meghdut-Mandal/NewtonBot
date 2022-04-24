@@ -17,7 +17,10 @@ exports.getCleanedContact = async (args,client,BotsApp) => {
 
         }
         else {
-            client.sendMessage(BotsApp.chatId,"*Enter valid contact number.* Approved Syntax:\n```1. XXXXXXXXXX``` \n```2. Tag the person``` \n```3. +(YYY)XXXXXXXXXX.``` \n_(YY- Country Code, without zeros)_",MessageType.text);
+            client.sendMessage(BotsApp.chatId,
+                {
+                    text:   "*Enter valid contact number.* Approved Syntax:\n```1. XXXXXXXXXX``` \n```2. Tag the person``` \n```3. +(YYY)XXXXXXXXXX.``` \n_(YY- Country Code, without zeros)_"
+                });
             return undefined;
         }
     } else {
@@ -27,8 +30,9 @@ exports.getCleanedContact = async (args,client,BotsApp) => {
     if (jidNumber.length < 8 || jidNumber.length > 13) {
         client.sendMessage(
             BotsApp.chatId,
-            "*Enter valid contact number.* Approved Syntax:\n```1. XXXXXXXXXX``` \n```2. Tag the person``` \n```3. +(YYY)XXXXXXXXXX.``` \n_(YY- Country Code, without zeros)_",
-            MessageType.text
+            {
+                text:   "*Enter valid contact number.* Approved Syntax:\n```1. XXXXXXXXXX``` \n```2. Tag the person``` \n```3. +(YYY)XXXXXXXXXX.``` \n_(YY- Country Code, without zeros)_"
+            }
         );
         return undefined;
     }
@@ -93,8 +97,14 @@ exports.handleError = async(err, client, BotsApp, customMessage = "```Something 
         isSenderSudo: BotsApp.isSenderSUDO,
         err: err
     }
-    client.sendMessage(BotsApp.chatId, customMessage, MessageType.text);
-    client.sendMessage(BotsApp.logGroup, ERROR_TEMPLATE.format(data), MessageType.text);
+    client.sendMessage(BotsApp.chatId,
+        {
+            text: customMessage
+        });
+    client.sendMessage(BotsApp.logGroup,
+        {
+            text :    ERROR_TEMPLATE.format(data)
+        });
 }
 
 exports.adminCommands = [

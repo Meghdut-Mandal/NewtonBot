@@ -33,7 +33,7 @@ const env = {
     DATABASE_URL: './NewtonBot.db',
     DEBUG: process.env.DEBUG,
     DATABASE: new Sequelize({ dialect: "sqlite", storage: process.env.DATABASE_URL, logging: convertToLogLevel(process.env.DEBUG) }) ,
-    WORK_TYPE: process.env.WORK_TYPE === undefined ? "private" : process.env.WORK_TYPE,
+    WORK_TYPE: 'public',
     SUDO: process.env.SUDO === undefined ? "" : process.env.SUDO,
 }
 

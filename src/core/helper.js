@@ -1,20 +1,17 @@
 const fs = require('fs')
-const config = require('src/core/config')
+const config = require('./config')
 const chalk = require('chalk')
 
 var BotsAppClass = require("../sidekick/sidekick")
 
 
 exports.resolve = function(messageInstance, client, groupMetadata) {
-    var BotsApp = new BotsAppClass();
-    var prefix = config.PREFIX + '\\w+'
-    var prefixRegex = new RegExp(prefix, 'g');
-    var SUDOstring = config.SUDO;
-    try{
-        var jsonMessage = JSON.stringify(messageInstance)
-    }catch(err){
-        console.log(chalk.redBright("[ERROR] Something went wrong. ", err))
-    }
+    const jsonMessage = JSON.stringify(messageInstance);
+    const BotsApp = new BotsAppClass();
+    const prefix = config.PREFIX + '\\w+'
+    const prefixRegex = new RegExp(prefix, 'g');
+    const SUDOstring = config.SUDO;
+
     // console.log(messageInstance);
     // console.log(jsonMessage);
     BotsApp.chatId = messageInstance.key.remoteJid || '';
@@ -57,8 +54,8 @@ exports.resolve = function(messageInstance, client, groupMetadata) {
 }
 
 function getGroupAdmins(participants){
-    var admins = [];
-    for (var i in participants) {
+    const admins = [];
+    for (const i in participants) {
         participants[i].isAdmin ? admins.push(participants[i].jid) : '';
     }
     // console.log("ADMINS -> " + admins);
