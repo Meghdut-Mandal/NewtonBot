@@ -14,7 +14,10 @@ Utilize your personal chat assistant/group manager to make the most out of Whats
 
 ## Documentation
 
+This bot currently supports Whatsapp Multi Device. And is a Migration from the legacy [Whataspp Web Bot](https://github.com/BotsAppOfficial/BotsApp).
+
 [Documentation Link](https://github.com/Meghdut-Mandal/NewtonBot)
+
 
  
 ## Tutorial
@@ -55,9 +58,11 @@ To run the bot on your device manually, you can use the following commands -
 ```bash
 git clone https://github.com/Meghdut-Mandal/NewtonBot.git
 cd NewtonBot
-npm install
-npm start
+yarn install
+yarn start
+## scan the QR code
 ```
+
 
 
 ## Support and Discussion groups
