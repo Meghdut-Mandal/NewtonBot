@@ -101,10 +101,10 @@ exports.handleError = async(err, client, BotsApp, customMessage = "```Something 
         {
             text: customMessage
         });
-    client.sendMessage(BotsApp.logGroup,
-        {
-            text :    ERROR_TEMPLATE.format(data)
-        });
+    // client.sendMessage(BotsApp.logGroup,
+    //     {
+    //         text :    ERROR_TEMPLATE.format(data)
+    //     });
 }
 
 exports.adminCommands = [
