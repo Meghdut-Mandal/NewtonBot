@@ -53,6 +53,8 @@ module.exports = {
             client.sendMessage(BotsApp.chatId,
                 {
                     text: topRequests,
+                },{
+                    detectLinks: true
                 }).catch(err => inputSanitization.handleError(err, client, BotsApp));
 
             // Delete the processing message
