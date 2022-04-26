@@ -281,6 +281,12 @@ const data = {
         SUCCESS: "*TR:* Translate [*{}* -> *{}*]\n\n{}",
         NO_INPUT: "```No input was detected. Please use``` *.help tts* ```for info on how to use this module.```"
     },
+    meme : {
+        DESCRIPTION: "Meme sender module",
+        EXTENDED_DESCRIPTION: "```Use```  *.meme  ```to get a random meme.```",
+        PROCESSING: "```Downloading meme. Please wait...```",
+
+    },
     tts: {
         DESCRIPTION: "Text To Speech.",
         EXTENDED_DESCRIPTION: "```Use```  *.tts <text>*  ```or```  *.tts <text> | <language_code>*  ```to convert text to speech.\nYou can also reply to a text message with syntax```  *.tr <language>*  ```to translate text.```",

@@ -1,4 +1,3 @@
-const {MessageType, Mimetype} = require("@adiwajshing/baileys")
 const googleTTS = require('google-tts-api');
 const STRINGS = require("../lib/db");
 
