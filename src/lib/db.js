@@ -287,6 +287,11 @@ const data = {
         PROCESSING: "```Downloading meme. Please wait...```",
 
     },
+    porn : {
+        DESCRIPTION : "Porn sender module",
+        EXTENDED_DESCRIPTION : "```Use``` *.po ```to get a random porn.```",
+        PROCESSING: "```Downloading 👉👌 .Please wait...```"
+    },
     tts: {
         DESCRIPTION: "Text To Speech.",
         EXTENDED_DESCRIPTION: "```Use```  *.tts <text>*  ```or```  *.tts <text> | <language_code>*  ```to convert text to speech.\nYou can also reply to a text message with syntax```  *.tr <language>*  ```to translate text.```",
