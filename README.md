@@ -9,12 +9,12 @@ NewtonBot is an optimized and easy-to-use WhatsApp UserBot written in Node.js.
 
 Utilize your personal chat assistant/group manager to make the most out of WhatsApp.   
 
-## Installation 
+## Simple Installation ( Windows ) 
 
 ````
-Clone the repository 
+Clone the repository
 
-Get in your pc and open the respository folder
+Get it in your pc and open the respository folder
 
 Open the Terminal from address bar by typing cmd.
 
@@ -26,13 +26,14 @@ npm install yarn
 
 yarn install
 
-````
+yarn start
 
-node --inspect -r ts-node/register src/index.ts
+````
 
 Now , Scan QR code from WhatsApp Mobile.
 
 You can now easily use the bot commands in your whatsapp mobile. 
+
 For example type .weather CityName to get the bot message about the current weather status of CityName.
 
 
@@ -49,22 +50,6 @@ Some pictures for reference
 This bot currently supports Whatsapp Multi Device. And is a Migration from the legacy [Whataspp Web Bot](https://github.com/BotsAppOfficial/BotsApp).
 
 [Documentation Link](https://github.com/Meghdut-Mandal/NewtonBot)
-
-
- 
-## Tutorial
-
-Here's a tutorial to set up NewtonBot on your own account in *less than 3 minutes.*
-
-
-## Deployment
-
-
-### Manually on Heroku
-
-You can deploy the bot the heroku yourself using the button below!
-
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmain&template=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmainhttps://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmain&template=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmain)
 
 ### Using Docker locally
 
