@@ -12,7 +12,13 @@ Utilize your personal chat assistant/group manager to make the most out of Whats
 ## Installation 
 
 ````
-Open the Terminal in Windows
+Clone the repository 
+
+Get in your pc and open the respository folder
+
+Open the Terminal from address bar by typing cmd.
+
+Press enter and open the cmd
 
 Type The following Commands and Press Enter: 
 
@@ -25,7 +31,7 @@ node --inspect -r ts-node/register src/index.ts
 Now , Scan QR code from WhatsApp Mobile.
 
 You can now easily use the bot commands in your whatsapp mobile. 
-for example type .weather CityName to get the bot message about the current weather status of CityName.
+For example type .weather CityName to get the bot message about the current weather status of CityName.
 ````
 
 ## Documentation
