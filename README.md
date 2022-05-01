@@ -26,6 +26,8 @@ npm install yarn
 
 yarn install
 
+````
+
 node --inspect -r ts-node/register src/index.ts
 
 Now , Scan QR code from WhatsApp Mobile.
@@ -33,7 +35,7 @@ Now , Scan QR code from WhatsApp Mobile.
 You can now easily use the bot commands in your whatsapp mobile. 
 For example type .weather CityName to get the bot message about the current weather status of CityName.
 
-````
+
 Some pictures for reference
 
 
