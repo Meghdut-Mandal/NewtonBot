@@ -33,14 +33,15 @@ Now , Scan QR code from WhatsApp Mobile.
 You can now easily use the bot commands in your whatsapp mobile. 
 For example type .weather CityName to get the bot message about the current weather status of CityName.
 
+````
 Some pictures for reference
+
 
 ![image](https://user-images.githubusercontent.com/88205668/166149808-50700590-c52c-4c6a-a5b6-9ad4a2e33001.png)
 
 ![image](https://user-images.githubusercontent.com/88205668/166149863-1b2345d7-0b41-4d98-aee5-0a275d2a4ddf.png)
 
 
-````
 ## Documentation
 
 This bot currently supports Whatsapp Multi Device. And is a Migration from the legacy [Whataspp Web Bot](https://github.com/BotsAppOfficial/BotsApp).
