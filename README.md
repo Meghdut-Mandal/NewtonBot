@@ -4,35 +4,50 @@
 
 > > Your Automated Personal Assistant, on WhatsApp!
 ---
-![GitHub top language](https://img.shields.io/github/languages/top/Meghdut-Mandal/NewtonBot) [![GitHub release](https://img.shields.io/github/release/Meghdut-Mandal/NewtonBot.svg)](https://github.com/bkimminich/juice-shop/releases/latest)
- ![GitHub contributors](https://img.shields.io/github/contributors/Meghdut-Mandal/NewtonBot) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/NewtonBotOfficial/NewtonBot) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/NewtonBotOfficial/NewtonBot) ![GitHub Repo stars](https://img.shields.io/github/stars/NewtonBotOfficial/NewtonBot?style=social) ![GitHub repo size](https://img.shields.io/github/repo-size/NewtonBotOfficial/NewtonBot)
 
 NewtonBot is an optimized and easy-to-use WhatsApp UserBot written in Node.js.
 
 Utilize your personal chat assistant/group manager to make the most out of WhatsApp.   
 
+## Simple Installation 
+
+````
+Clone the repository
+
+Get it in your pc and open the respository folder
+
+Open the Terminal from address bar by typing cmd.
+
+Press enter and open the cmd
+
+Type The following Commands and Press Enter: 
+
+npm install yarn
+
+yarn install
+
+yarn start
+
+````
+
+Now , Scan QR code from WhatsApp Mobile.
+
+You can now easily use the bot commands in your whatsapp mobile. 
+
+For example type .weather CityName to get the bot message about the current weather status of CityName.
+
+
+Some pictures for reference
+
+
+![image](https://user-images.githubusercontent.com/88205668/166149808-50700590-c52c-4c6a-a5b6-9ad4a2e33001.png)
+
+![image](https://user-images.githubusercontent.com/88205668/166149863-1b2345d7-0b41-4d98-aee5-0a275d2a4ddf.png)
+
 
 ## Documentation
 
 This bot currently supports Whatsapp Multi Device. And is a Migration from the legacy [Whataspp Web Bot](https://github.com/BotsAppOfficial/BotsApp).
-
-[Documentation Link](https://github.com/Meghdut-Mandal/NewtonBot)
-
-
- 
-## Tutorial
-
-Here's a tutorial to set up NewtonBot on your own account in *less than 3 minutes.*
-
-
-## Deployment
-
-
-### Manually on Heroku
-
-You can deploy the bot the heroku yourself using the button below!
-
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmain&template=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmainhttps://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmain&template=https%3A%2F%2Fgithub.com%2FNewtonBotOfficial%2FNewtonBot%2Ftree%2Fmain)
 
 ### Using Docker locally
 
