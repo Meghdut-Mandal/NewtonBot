@@ -49,8 +49,6 @@ Some pictures for reference
 
 This bot currently supports Whatsapp Multi Device. And is a Migration from the legacy [Whataspp Web Bot](https://github.com/BotsAppOfficial/BotsApp).
 
-[Documentation Link](https://github.com/Meghdut-Mandal/NewtonBot)
-
 ### Using Docker locally
 
 To follow this method, you will need to have docker installed on your machine and have some experience using docker.
