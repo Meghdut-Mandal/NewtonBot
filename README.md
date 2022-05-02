@@ -9,36 +9,22 @@ NewtonBot is an optimized and easy-to-use WhatsApp UserBot written in Node.js.
 
 Utilize your personal chat assistant/group manager to make the most out of WhatsApp.   
 
-## Simple Installation 
+## Installation process
 
 ````
-Clone the repository
-
-Get it in your pc and open the respository folder
-
-Open the Terminal from address bar by typing cmd.
-
-Press enter and open the cmd
-
-Type The following Commands and Press Enter: 
-
-npm install yarn
-
-yarn install
-
-yarn start
-
+Clone the repository on your pc
+Open the cmd Terminal in that folder.
+Use the following Commands and Press Enter: 
+ 1. npm install yarn (only if yarn is not installed)
+ 2. yarn install
+ 3. yarn start
 ````
 
 Now , Scan QR code from WhatsApp Mobile.
-
-You can now easily use the bot commands in your whatsapp mobile. 
-
+You can now easily use the bot commands in your whatsapp mobile.
 For example type .weather CityName to get the bot message about the current weather status of CityName.
 
-
-Some pictures for reference
-
+Some reference images
 
 ![image](https://user-images.githubusercontent.com/88205668/166149808-50700590-c52c-4c6a-a5b6-9ad4a2e33001.png)
 
@@ -104,10 +90,6 @@ Feel free to post your queries or concerns on any of the discussion forums menti
 
 
 ## Inspiration
-
-- Baileys Library
-
-- Yusuf Usta 
 
 - [X-tra-Telegram](https://github.com/Prince-Mendiratta/X-tra-Telegram)
 
