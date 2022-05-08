@@ -44,7 +44,6 @@ const startSock = async() => {
         // implement to handle retries
         getMessage: async key => {
             return {
-                conversation: 'hello'
             }
         }
     })
@@ -177,6 +176,15 @@ const startSock = async() => {
         }
 
         console.log('connection update', update)
+        // if qr code present generate a link and send to user
+        if (update.qr) {
+           const message = encodeURIComponent(update.qr);
+            // create the qr code url
+            const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=1000&data=${message}`;
+            // log the url
+            console.log("Open this link in browser and scan in whatsapp Link "+qrCodeUrl);
+        }
+        //
     })
     // listen for when the auth credentials is updated
     sock.ev.on('creds.update', saveState)
