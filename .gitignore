@@ -12,3 +12,4 @@
 !.yarn/versions
 /tmp/*
 /*.db
+.yarnrc.yml
