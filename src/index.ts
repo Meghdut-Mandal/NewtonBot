@@ -39,7 +39,7 @@ const startSock = async() => {
     const sock = makeWASocket({
         version,
         logger,
-        printQRInTerminal: true,
+        printQRInTerminal: false,
         auth: state,
         // implement to handle retries
         getMessage: async key => {
@@ -180,7 +180,7 @@ const startSock = async() => {
         if (update.qr) {
            const message = encodeURIComponent(update.qr);
             // create the qr code url
-            const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=1000&data=${message}`;
+            const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?format=png&size=500x500&&data=${message}`;
             // log the url
             console.log("Open this link in browser and scan in whatsapp Link "+qrCodeUrl);
         }
