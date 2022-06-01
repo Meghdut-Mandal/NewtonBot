@@ -29,44 +29,47 @@ const clearance = async(BotsApp, client, isBlacklist) => {
                     }
                 );
                 return false;
-            } else if (sudoCommands.indexOf(BotsApp.commandName) >= 0 && !BotsApp.isSenderSUDO) {
-                console.log(
-                    chalk.redBright.bold(`[INFO] sudo commmand `),
-                    chalk.greenBright.bold(`${BotsApp.commandName}`),
-                    chalk.redBright.bold(
-                        `not executed in public Work Type.`
-                    )
-                );
-                var messageSent = await Users.getUser(BotsApp.chatId);
-                if(messageSent){
-                    console.log(chalk.blueBright.bold("[INFO] Promo message had already been sent to " + BotsApp.chatId))
-                    return false;
-                }
-                else{
-                    await client.sendMessage(
-                        BotsApp.chatId,
-                        {
-                            text :  GENERAL.SUDO_PERMISSION.format({ worktype: "public", groupName: BotsApp.groupName ? BotsApp.groupName : "private chat", commandName: BotsApp.commandName })
-                        },
-                        {
-                            contextInfo: {
-                                stanzaId: BotsApp.chatId,
-                                participant: BotsApp.sender,
-                                quotedMessage: {
-                                    conversation: BotsApp.body,
-                                },
-                            },
-                        }
-                    );
-                    await Users.addUser(BotsApp.chatId)
-                    return false;
-                }
+            }
 
-            }else{
+            // else if (sudoCommands.indexOf(BotsApp.commandName) >= 0 && !BotsApp.isSenderSUDO) {
+            //     console.log(
+            //         chalk.redBright.bold(`[INFO] sudo commmand `),
+            //         chalk.greenBright.bold(`${BotsApp.commandName}`),
+            //         chalk.redBright.bold(
+            //             `not executed in public Work Type.`
+            //         )
+            //     );
+            //     var messageSent = await Users.getUser(BotsApp.chatId);
+            //     if(messageSent){
+            //         console.log(chalk.blueBright.bold("[INFO] Promo message had already been sent to " + BotsApp.chatId))
+            //         return false;
+            //     }
+            //     else{
+            //         await client.sendMessage(
+            //             BotsApp.chatId,
+            //             {
+            //                 text :  GENERAL.SUDO_PERMISSION.format({ worktype: "public", groupName: BotsApp.groupName ? BotsApp.groupName : "private chat", commandName: BotsApp.commandName })
+            //             },
+            //             {
+            //                 contextInfo: {
+            //                     stanzaId: BotsApp.chatId,
+            //                     participant: BotsApp.sender,
+            //                     quotedMessage: {
+            //                         conversation: BotsApp.body,
+            //                     },
+            //                 },
+            //             }
+            //         );
+            //         await Users.addUser(BotsApp.chatId)
+            //         return false;
+            //     }
+            //
+            // }
+            else{
                 return true;
             }
         }
-        else if(config.WORK_TYPE.toLowerCase() != "public" && !BotsApp.isSenderSUDO){
+        else if(config.WORK_TYPE.toLowerCase() !== "public" && !BotsApp.isSenderSUDO){
             console.log(
                 chalk.redBright.bold(`[INFO] commmand `),
                 chalk.greenBright.bold(`${BotsApp.commandName}`),
