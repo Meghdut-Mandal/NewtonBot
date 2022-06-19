@@ -108,7 +108,6 @@ exports.handleError = async(err, client, BotsApp, customMessage = "```Something 
 }
 
 exports.adminCommands = [
-    "add",
     "demote",
     "invite",
     "mute",
